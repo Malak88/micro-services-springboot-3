@@ -1,0 +1,27 @@
+#Config for discovery client
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+server:
+  port: 8090
+spring:
+  application:
+    name: students # name will show up in eureka interface
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:1239/students
+    username: username
+    password: password
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+  # config to config server
+  config:
+    import: optional:configserver:http://localhost:8888
+
+  # ==> run student services will be registered in discovery services
