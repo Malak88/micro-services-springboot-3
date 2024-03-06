@@ -4,15 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6c55262a-984b-4e2e-9809-ded248678515" name="Changes" comment="school service + app.yml">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="6c55262a-984b-4e2e-9809-ded248678515" name="Changes" comment="HTTP communication between 2 micro-services with openFeign">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/school/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/school/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/school/src/main/java/com/malak/school/SchoolApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/school/src/main/java/com/malak/school/SchoolApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/school/src/main/java/com/malak/school/SchoolService.java" beforeDir="false" afterPath="$PROJECT_DIR$/school/src/main/java/com/malak/school/SchoolService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/school/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/school/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -46,6 +42,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.DiscoveryApplication.executor": "Run",
+    "Application.GatewayApplication.executor": "Run",
     "Application.SchoolApplication.executor": "Run",
     "Application.StudentApplication.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
@@ -124,10 +121,10 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.SchoolApplication" />
-        <item itemvalue="Application.StudentApplication" />
-        <item itemvalue="Application.DiscoveryApplication" />
         <item itemvalue="Application.GatewayApplication" />
+        <item itemvalue="Application.StudentApplication" />
+        <item itemvalue="Application.SchoolApplication" />
+        <item itemvalue="Application.DiscoveryApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -180,7 +177,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709728474411</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="HTTP communication between 2 micro-services with openFeign">
+      <option name="closed" value="true" />
+      <created>1709730927778</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1709730927778</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -188,6 +193,7 @@
     <MESSAGE value="discovery server: app.yml + main enable eureka" />
     <MESSAGE value="student service + app.yml" />
     <MESSAGE value="school service + app.yml" />
-    <option name="LAST_COMMIT_MESSAGE" value="school service + app.yml" />
+    <MESSAGE value="HTTP communication between 2 micro-services with openFeign" />
+    <option name="LAST_COMMIT_MESSAGE" value="HTTP communication between 2 micro-services with openFeign" />
   </component>
 </project>

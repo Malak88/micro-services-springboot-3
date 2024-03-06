@@ -29,4 +29,6 @@ spring:
 
 application: # url of student microservice/ endpoint
   config:
-    students-url: http://localhost:8090/api/v1/students
+    #students-url: http://localhost:8090/api/v1/students
+    #http request will be redirected by the API Gateway
+    students-url: http://localhost:8222/api/v1/students
