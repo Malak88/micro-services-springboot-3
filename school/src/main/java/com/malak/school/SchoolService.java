@@ -1,5 +1,6 @@
 package com.malak.school;
 
+import com.malak.school.client.StudentClient;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -10,7 +11,7 @@ import java.util.List;
 public class SchoolService {
 
     private final SchoolRepository repository;
-    //private final StudentClient client;
+    private final StudentClient client;
 
     public void saveSchool(School school) {
         repository.save(school);

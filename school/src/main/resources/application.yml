@@ -27,3 +27,6 @@ spring:
     database: postgresql
     database-platform: org.hibernate.dialect.PostgreSQLDialect
 
+application: # url of student microservice/ endpoint
+  config:
+    students-url: http://localhost:8090/api/v1/students
