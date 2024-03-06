@@ -1,20 +1,9 @@
-eureka:
-  instance:
-    hostname: localhost
-  client:
-    register-with-eureka: false # by default true , eureka does not need to register itself with itself
-    fetch-registry: false # we don't need to fetch a registry
-    service-url:
-      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
-server: # server.port in previous line
-  port: 8761
-
-  #tell eureka to read config from config server
+#tell eureka to read config from config server
 spring:
+  application:
+    name: discovery
   config:
     import: optional:configserver:http://localhost:8888
     #optional = if this micro service doesnt find the config in config server
     # it will not fail to start up
     # 8888 port wil be given to config server
-  application:
-    name: discovery

@@ -1,34 +1,8 @@
-
-#Config for discovery client
-eureka:
-  instance:
-    hostname: localhost
-  client:
-    service-url:
-      defaultZone: http://localhost:8761/eureka
-
-server:
-  port: 8070
-
 spring:
   application:
-    name: schools # name will show up in eureka interface
+    # name will show up in eureka interface
+    #same name as .yml in config server
+    name: schools
   # config to config server
   config:
     import: optional:configserver:http://localhost:8888
-  datasource:
-    driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://localhost:1241/schools
-    username: username
-    password: password
-  jpa:
-    hibernate:
-      ddl-auto: create-drop
-    database: postgresql
-    database-platform: org.hibernate.dialect.PostgreSQLDialect
-
-application: # url of student microservice/ endpoint
-  config:
-    #students-url: http://localhost:8090/api/v1/students
-    #http request will be redirected by the API Gateway
-    students-url: http://localhost:8222/api/v1/students
